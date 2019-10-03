@@ -66,7 +66,7 @@ public class HandlelisteServlet extends HttpServlet {
         if (liste.getStorrelse() > 0) {
             Iterator<Entry<Integer,String>> lopar = liste.getIteratorOverPar();
 
-            for (int i = 0; i < liste.getStorrelse() && lopar.hasNext(); i++) {
+            for (int i = 0; i < liste.getStorrelse() && lopar.hasNext(); i++) { // kunne/burde vert ei while-løkke her då
                 Entry<Integer,String> e = lopar.next();
                 out.println("<p>");
                 out.println("<form action=\"" + HANDLELISTE_URL + "\" method=\"POST\">");
@@ -108,7 +108,7 @@ public class HandlelisteServlet extends HttpServlet {
         } else {
 
             // sidan eg brukar "unike" id-ar til å lagre varene i handlelista så om 2 slettar på likt vil det berre slette eit objekt
-            // og vise rett tilstand når ein får sida tilbake
+            // og vise rett tilstand når ein får sida tilbake, uansett
             // Synkronisert på lista(?) slik at berre ein person kan leggje til / slette på likt: kan også evt. setje sync i handleliste klassen på leggtil/fjern metodane
             synchronized (liste) {
                 String nyttHandleObjekt = request.getParameter("nyttHandleObjekt");
