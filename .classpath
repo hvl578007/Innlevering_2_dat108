@@ -13,8 +13,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Stian/java/apache-tomee-webprofile-7.1.1/lib/servlet-api.jar"/>
-	<classpathentry kind="lib" path="C:\Users\stian\.p2\pool\plugins\org.junit.jupiter.api_5.4.0.v20190212-2109.jar"/>
-	<classpathentry kind="lib" path="C:\Stian\java\commons-lang3-3.9.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.9.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
